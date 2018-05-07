@@ -1,0 +1,42 @@
+﻿<div class="card bg-light">
+    <div class="card-header">
+        <div class="card-subtitle">Product Details</div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <span class="col-sm-4">Product Name</span>
+                    <span>{{product.productName}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4">Product Code</span>
+                    <span>{{product.productCode}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4">Release Date</span>
+                    <span>{{product.releaseDate}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4">Description</span>
+                    <span>{{product.description}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4">Price</span>
+                    <span>{{product.price}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-sm-4">Rating</span>
+                    <span>{{product.rating}}</span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img [src]="product.image" [style.width.px]="imageWidth"/>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <!--<button (onclick)="onBack()" class="btn btn-outline-primary btn-light"><i class="fa fa-backward"></i>Back</button>-->
+        <button (click)="onBack()" class="btn btn-outline-primary btn-light"><span><i class="fa fa-backward"></i>Back</span></button>
+    </div>
+</div>

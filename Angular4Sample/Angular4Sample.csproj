@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientApp\assets\**" />
+    <Content Remove="ClientApp\assets\**" />
+    <EmbeddedResource Remove="ClientApp\assets\**" />
+    <None Remove="ClientApp\assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\artist\artist.component.ts" />
+    <None Remove="ClientApp\app\artist\artist.service.ts" />
+    <None Remove="ClientApp\app\artist\artist.ts" />
+    <None Remove="ClientApp\app\product\product.service.ts" />
+    <None Remove="ClientApp\app\product\product.ts" />
+    <None Remove="ClientApp\app\Shared\convert-to-space.pipe.ts" />
+    <None Remove="ClientApp\app\Shared\page-not-found.component.ts" />
+    <None Remove="ClientApp\app\Shared\star-output.ts" />
+    <None Remove="ClientApp\app\Shared\star.component.ts" />
+    <None Remove="ClientApp\app\welcome\welcome.component.ts" />
+    <None Remove="ClientApp\index.html" />
+    <None Remove="ClientApp\app\product\product.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\colored-pencils.jpg" />
+    <None Include="wwwroot\img\mens-shirt.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\artist\artist.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\artist\artist.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\artist\artist.ts" />
+    <TypeScriptCompile Include="ClientApp\app\product\product.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\product\product.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\product\product.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Shared\convert-to-space.pipe.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Shared\page-not-found.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Shared\star-output.ts" />
+    <TypeScriptCompile Include="ClientApp\app\Shared\star.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\welcome\welcome.component.ts" />
+  </ItemGroup>
+
+</Project>

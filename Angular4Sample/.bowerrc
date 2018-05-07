@@ -1,0 +1,7 @@
+{
+  "directory": "wwwroot/lib",
+  "registry": "http://bower.herokuapp.com",
+  "https-proxy": "http://tldppmsa:6ygR4T2X@itproxy-farm.toll.com.au:8080",
+  "proxy": "http://tldppmsa:6ygR4T2X@itproxy-farm.toll.com.au:8080",
+  "strict-ssl": false
+}

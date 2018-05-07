@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular4 Demo</title>
+    <base href="/" />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+
+    <script src="~/ClientApp/dist/inline.bundle.js"></script>
+    <script src="~/ClientApp/dist/polyfills.bundle.js"></script>
+    <script src="~/ClientApp/dist/styles.bundle.js"></script>
+    <script src="~/ClientApp/dist/vendor.bundle.js"></script>
+    <script src="~/ClientApp/dist/main.bundle.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

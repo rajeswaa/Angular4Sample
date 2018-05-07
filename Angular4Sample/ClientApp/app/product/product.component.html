@@ -1,0 +1,40 @@
+﻿<div class="card bg-light">
+    <div class="card-header h3">
+        <div class="card-subtitle">{{pageTitle}}</div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-2 h5">
+                Filter by:
+            </div>
+            <div class="col-sm-4 float-md-left">
+                <input type="text" [(ngModel)]="listFilter" />
+            </div>
+        </div>
+        <table class="table table-bordered table-striped table-responsive-sm" *ngIf="products && products.length">
+            <thead class="thead-dark">
+                <tr>
+                    <th><button class="btn btn-primary" (click)="toggleImage()">{{showToggle ?'Hide' : 'Show'}} Image</button>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Release Date</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of filteredProducts">
+                    <td><img [src]="product.image" *ngIf="showToggle" [style.width.px]="setWidth" [style.margin.px]="setMargin" /></td>
+                    <td><a [routerLink]="['/products',product.productId]">{{product.productName | uppercase}}</a></td>
+                    <td>{{product.productCode | lowercase | convertToSpace : '-'}}</td>
+                    <td>{{product.releaseDate | date : 'dd/MMM/yyyy' | uppercase}}</td> <!--'fullDate','shortDate'-->
+                    <td>{{product.description | titlecase}}</td>
+                    <td>{{product.price | currency:'AUD': true}}
+                    </td>
+                    <td><pm-star [rating]="product.rating" (ratingClicked)="onRatingClicked($event)"></pm-star></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

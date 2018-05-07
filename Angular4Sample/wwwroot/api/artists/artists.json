@@ -1,0 +1,68 @@
+﻿[
+  {
+    "artistId": "1",
+    "artistName": "Radiohead",
+    "country": "USA",
+    "company": "Columbia"
+  },
+  {
+    "artistId": "2",
+    "artistName": "Portishead",
+    "country": "USA",
+    "company": "RCA"
+  },
+  {
+    "artistId": "3",
+    "artistName": "Bob Dylan",
+    "country": "USA",
+    "company": "Columbia"
+  },
+  {
+    "artistId": "4",
+    "artistName": "Bonnie Tyler",
+    "country": "UK",
+    "company": "CBS Records"
+  },
+  {
+    "artistId": "5",
+    "artistName": "Dolly Parton",
+    "country": "USA",
+    "company": "RCA"
+  },
+  {
+    "artistId": "6",
+    "artistName": "Gary Moore",
+    "country": "UK",
+    "company": "Virgin records"
+  },
+  {
+    "artistId": "7",
+    "artistName": "Eros Ramazzotti",
+    "country": "EU",
+    "company": "BMG"
+  },
+  {
+    "artistId": "8",
+    "artistName": "Bee Gees",
+    "country": "UK",
+    "company": "Polydor"
+  },
+  {
+    "artistId": "9",
+    "artistName": "Andrea Bocelli",
+    "country": "EU",
+    "company": "Polydor"
+  },
+  {
+    "artistId": "10",
+    "artistName": "Dr.Hook",
+    "country": "UK",
+    "company": "CBS"
+  },
+  {
+    "artistId": "11",
+    "artistName": "Rod Stewart",
+    "country": "UK",
+    "company": "Pickwick"
+  }
+]

@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit{
     pageTitle: string = 'Product List';
     showToggle: boolean = false;
     setWidth: number = 50;
-    setMargin: number = 3;
+    setMargin: number = 2;
     _listFilter: string = "";
     filteredProducts: IProduct[];
 

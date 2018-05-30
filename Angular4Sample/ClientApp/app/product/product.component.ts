@@ -49,6 +49,7 @@ export class ProductComponent implements OnInit{
             err => errorMessage = <any>err
         );
     }
+
     onRatingClicked(starOutput: IStarOutput): void {
         this.pageTitle = 'Product List ' + starOutput.message + ' : ' + starOutput.rating;
     }

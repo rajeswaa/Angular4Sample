@@ -30,6 +30,6 @@ export class ProductDetailComponent implements OnInit {
     }
 
     onBack() {
-        this._route.navigate(['/products']);
+        this._route.navigate(['/products']); 
     }
 }

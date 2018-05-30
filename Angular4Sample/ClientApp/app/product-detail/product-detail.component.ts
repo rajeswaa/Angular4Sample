@@ -4,7 +4,7 @@ import { IProduct } from '../product/product';
 import { ProductService } from '../product/product.service';
 
 @Component({
-    templateUrl: './product-detail.component.html',
+    templateUrl: './product-detail.component.html', 
     styles: []
 })
 export class ProductDetailComponent implements OnInit {
@@ -30,6 +30,6 @@ export class ProductDetailComponent implements OnInit {
     }
 
     onBack() {
-        this._route.navigate(['/products']);
+        this._route.navigate(['/products']); 
     }
 }

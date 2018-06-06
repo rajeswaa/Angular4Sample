@@ -4,5 +4,5 @@
     templateUrl: './page-not-found.component.html'            
 })
 export class PageNotFoundComponent{
-
+    val:string;
  }

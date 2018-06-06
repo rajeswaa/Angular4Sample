@@ -51,7 +51,7 @@ export class ProductComponent implements OnInit{
     }
 
     onRatingClicked(starOutput: IStarOutput): void {
-        this.pageTitle = 'Product List : ' + starOutput.message + ' : ' + starOutput.rating;
+        this.pageTitle = 'Product List  : ' + starOutput.message + ' : ' + starOutput.rating;
     }
 
 }

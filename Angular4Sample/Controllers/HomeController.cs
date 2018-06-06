@@ -13,7 +13,7 @@ namespace SampleApp
         // GET: /<controller>/
         public IActionResult Index()
         {
-            //display view
+            //display view2
             return View();
         }
     }
